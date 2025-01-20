@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@400;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+
+body{
+    background-image:  url(./assets/bg.png);
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    padding-left: 141px;
+    padding-right: 141px;
+  }
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    #school{
+        display: flex;
+        align-items: center;
+        h3{
+            font-size: 32px;
+            font-weight: bold;
+        }
+    }
+    #nav{
+        display: flex;
+        align-items: center;
+        ul{
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            li{
+                margin-right: 20px;
+                a{
+                    font-size: 20px;
+                    font-weight: 600px;
+                    text-decoration:none;
+                    text-align: center;
+                    text-decoration-color: none;
+                }
+            }
+        }
+        
+    }
+    #contact{
+        display: flex;
+        margin: none;
+        display: inline-block;
+        button{
+            margin-top: 30px;
+            background-color: rgba(254, 163, 1, 1);
+            border-radius: 12px;
+            padding: 10px 60.5px;
+            border-style: none;
+            color: white;
+            margin: none;
+        };
+    }
+       
+}
+
+
+@media screen and (max-width: 768px){
+    body{
+        padding: 12px 0px;
+    }
+    #header{
+        margin: -9px;
+        margin-top: -20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-style: solid;
+        border-color: rgba(254, 163, 1, 1);
+    h3{
+        display: none;
+    }
+    .burger-menu{
+            align-items: center;
+            display: block;
+            cursor: pointer;
+            padding: none;
+            div{
+                
+                width: 25px;
+                height: 3px;
+                background-color: black;
+                margin: 5px;
+            }
+        
+    }
+    #nav{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    
+    }
+
+}
