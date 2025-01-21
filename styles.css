@@ -98,20 +98,31 @@ body{
             text-align: center;
             width: 367.8px;
             border-radius: 18.86px;
-            background-image: linear-gradient(to top, white, rgba(219, 240, 250, 1));
-            border-color: rgba(219, 240, 250, 1);
-            border-style: solid;
+            border-style: solid;           
+            }
+            #card1.curr-card{
+                background-image: linear-gradient(to top, white, rgba(219, 240, 250, 1));
+                border-color: rgba(219, 240, 250, 1); 
+            }
+            #card2.curr-card{
+                background-image: linear-gradient(to top, white, rgba(250, 239, 217, 1));
+                border-color: rgba(250, 239, 217, 1);
+            }
+            #card3.curr-card{
+                background-image: linear-gradient(to top, white, rgba(236, 227, 249, 1));
+                border-color: rgba(236, 227, 249, 1);
+            }
+            
             button{
-                background-color: none;
+                background: none;
+                background-color: transparent;
                 border-style: none;
                 font-size: 24px;
+                cursor: pointer;
             }
         }
 
     }
-    
-    
-}
 
 @media screen and (max-width: 576px){
     body{
@@ -172,6 +183,26 @@ body{
                 }
             }
             
+        }
+    }
+    #Standard-Curriculum{
+        display: flex;
+        flex-direction: column;
+        h3{
+            font-size: 26px;
+        }
+        #card-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center ;
+            margin-bottom: 12.3px;
+            justify-content: space-between;
+            
+        }
+        .curr-card{
+            margin-bottom: 12.3px;
+            width: 100vh;
         }
     }
 
