@@ -4,8 +4,8 @@ body{
     background-image:  url(./assets/bg.png);
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    padding-left: 141px;
-    padding-right: 141px;
+    width: 90vw;
+    margin: 0px auto;
   }
 
 #header{
@@ -39,6 +39,9 @@ body{
         }
         
     }
+    .burger-menu{
+        display:none;
+    }
     #contact{
         display: flex;
         margin: none;
@@ -51,15 +54,69 @@ body{
             border-style: none;
             color: white;
             margin: none;
+            margin-right: none;
+            padding-right: none;
         };
     }
        
 }
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    #empower-head{
+        margin-right: 20px;
+    }
+    h3{
+        font-size: 56px;
+        margin-bottom: none;
+    }
+    p{
+        margin-top: none;
+        font-size: 20px;
+    }
+    button{
+        background-color: orange;
+        color: white;
+        border-radius: 12px;
+        font-size: 20px;
+        border-style: none;
+        width: 190px;
+        height: 50px;
+    }
+}
+#Standard-Curriculum{
+    h3{
+        text-align: center;
+        font-size: 46px;
+    }
+    #card-div{
+        display: flex;
+        justify-content: space-between;
+        .curr-card{
+            padding-top: 52px;
+            text-align: center;
+            width: 367.8px;
+            border-radius: 18.86px;
+            background-image: linear-gradient(to top, white, rgba(219, 240, 250, 1));
+            border-color: rgba(219, 240, 250, 1);
+            border-style: solid;
+            button{
+                background-color: none;
+                border-style: none;
+                font-size: 24px;
+            }
+        }
 
+    }
+    
+    
+}
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 576px){
     body{
         padding: 12px 0px;
+        width: 90vw;
     }
     #header{
         margin: -9px;
@@ -78,21 +135,44 @@ body{
             cursor: pointer;
             padding: none;
             div{
-                
                 width: 25px;
                 height: 3px;
                 background-color: black;
                 margin: 5px;
-            }
-        
+            } 
     }
     #nav{
         display: none;
     }
     button{
         display: none;
+    }  
     }
-    
+    #banner{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        #empower-head{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0px;
+            text-align: center;
+            h2{
+                width: 90vw;
+            }
+            #kid-img{
+                img{
+                    width: 90vw;
+                    display: block;
+                    margin: 10px;
+                }
+            }
+            
+        }
     }
 
 }
