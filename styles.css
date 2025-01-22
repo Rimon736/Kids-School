@@ -3,10 +3,10 @@
 body{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    width: 90vw;
-    margin: 0px auto;
+    width: 95vw;
+    padding:20px;
   }
- #marq{
+#marq{
     color: orange;
  }
 #header{
@@ -309,6 +309,7 @@ body{
 #footer{
     background-color: rgba(1, 172, 253, 1);
     color: white;
+    margin-bottom: none;
     #parent-div{
         padding-left: 30px;
         padding-top: 30px;
@@ -350,7 +351,7 @@ body{
 @media screen and (max-width: 576px){
     body{
         padding: 12px 0px;
-        width: 90vw;
+        width: 100vw;
     }
     #header{
         margin: -9px;
@@ -375,19 +376,24 @@ body{
                 margin: 5px;
         } 
         }
-    }
-    #nav{
-        display: none;
-    }
-    button{
-        display: none;
+        #nav{
+            display: none;
+        }
+        button{
+            display: none;
+        }
     }  
+    #marq{
+        color: orange;
+     }
+  
     #banner{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        margin: 0;
+        margin: auto;
+        max-width: 357px;
         #empower-head{
             display: flex;
             flex-direction: column;
@@ -409,13 +415,14 @@ body{
                     margin: 10px;
                     max-width: 100%;
                     max-height: 100%;
-                    object-fit: contain;
+                    object-fit:scale-down;
                 }
             }
             
         }
     }
     #Standard-Curriculum{
+        background-image: url(./assets/bg.png);
         display: flex;
         flex-direction: column;
         h3{
@@ -433,6 +440,9 @@ body{
         .curr-card{
             margin-bottom: 12.3px;
             width: 100vh;
+        }
+        #arrow-div{
+            display: none;
         }
         
     } 
@@ -634,11 +644,13 @@ body{
                 flex-direction: row;
                 display: flex;
                 padding-left: 20px;
+                
                 padding-top: 20px;
             }
             p{
                 font-size: 20px;
                 padding-left: 20px;
+                padding-right: 20px;
                 max-width: 400px;
             }
             #about{
