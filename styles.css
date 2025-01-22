@@ -141,6 +141,17 @@ body{
     }
 }
 
+#stories{
+    border-style: none;
+    background-image: linear-gradient(to bottom, white, rgba(249, 221, 173, 1) );
+    text-align: center;
+    #story-cards{
+        border-radius: 16px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 @media screen and (max-width: 576px){
     body{
         padding: 12px 0px;
